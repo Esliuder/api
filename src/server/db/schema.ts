@@ -18,8 +18,8 @@ import {
  */
 export const createTable = pgTableCreator((name) => `api_${name}`);
 
-export const posts = createTable(
-  "post",
+export const users = createTable(
+  "users",
   {
     id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
     name: varchar("name", { length: 256 }),
